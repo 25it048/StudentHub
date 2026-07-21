@@ -1,0 +1,205 @@
+header img{
+    width: 180px;   /* 90px ki jagah 180px */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+/* =========================================
+   1. CSS VARIABLES & RESET
+========================================= */
+:root {
+  --primary-blue: #0d47a1;     /* Deep navy blue matching the pen/shield */
+  --secondary-blue: #1976d2;   /* Vibrant blue matching the graduation cap */
+  --light-blue: #e3f2fd;       /* Soft blue for hover states and backgrounds */
+  --accent-blue: #00bcd4;      /* Cyan highlight */
+  --text-dark: #263238;        /* Dark slate for readable body text */
+  --text-light: #607d8b;       /* Muted grey for subtitles */
+  --bg-color: #f4f7f6;         /* Light neutral page background */
+  --white: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  --radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* =========================================
+   2. HEADER
+========================================= */
+header {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: var(--white);
+  text-align: center;
+  padding: 2.5rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: var(--light-blue);
+  font-weight: 300;
+}
+
+/* =========================================
+   3. NAVIGATION BAR
+========================================= */
+nav {
+  background-color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   4. MAIN CONTENT & CARDS
+========================================= */
+main {
+  max-width: 1100px;
+  width: 90%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+/* On wider screens, create a dashboard layout (2 columns) */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 2fr 1fr;
+  }
+  
+  /* Make the main welcome section span full width */
+  main section {
+    grid-column: span 2;
+  }
+  
+  /* Make footer span full width */
+  main footer {
+    grid-column: span 2;
+  }
+}
+
+/* Common styling for Section, Article, and Aside (Card UI) */
+section, article, aside {
+  background-color: var(--white);
+  padding: 1.8rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--secondary-blue);
+}
+
+/* Highlight the main hero section */
+section {
+  border-top: 5px solid var(--primary-blue);
+  background: linear-gradient(to right, #ffffff, var(--light-blue));
+}
+
+h2, h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--light-blue);
+  padding-bottom: 0.5rem;
+}
+
+/* Notice List Styling */
+aside ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+aside ul li {
+  position: relative;
+  padding: 10px 0 10px 24px;
+  border-bottom: 1px solid #eeeeee;
+  color: var(--text-dark);
+}
+
+aside ul li:last-child {
+  border-bottom: none;
+}
+
+/* Custom bullet points for notices */
+aside ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent-blue);
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* =========================================
+   5. FOOTER
+========================================= */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  border-top: 1px solid #e0e0e0;
+}
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    margin:5px;
+    background:#007bff;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
