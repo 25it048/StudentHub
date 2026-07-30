@@ -1,0 +1,228 @@
+/* ==========================
+   Google Font
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+.logo{
+    width:180px;
+    transition:.4s;
+    animation:float 3s ease-in-out infinite;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+    filter:drop-shadow(0 0 15px white);
+}
+body{
+    background:linear-gradient(135deg,#eef2ff,#dbeafe,#bfdbfe);
+    color:#222;
+    min-height:100vh;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+header p{
+    font-size:18px;
+    opacity:.9;
+}
+
+/* ==========================
+   Navigation
+========================== */
+
+nav{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:white;
+    color:#2563eb;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+}
+
+nav a:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   Main
+========================== */
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+}
+
+/* ==========================
+   Cards
+========================== */
+
+section,
+article,
+aside{
+
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+section:hover,
+article:hover,
+aside:hover{
+    transform:translateY(-8px);
+}
+
+section{
+    grid-column:1/3;
+}
+
+section h2,
+article h3,
+aside h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+section p,
+article p{
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* ==========================
+   Notice List
+========================== */
+
+aside ul{
+    list-style:none;
+}
+
+aside li{
+    margin:15px 0;
+    padding:12px;
+    background:#eff6ff;
+    border-left:6px solid #2563eb;
+    border-radius:8px;
+    transition:.3s;
+}
+
+aside li:hover{
+    background:#dbeafe;
+    transform:translateX(8px);
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    margin-top:40px;
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:17px;
+}
+
+/* ==========================
+   Bottom Navigation
+========================== */
+
+footer + nav{
+
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+footer + nav a{
+
+    text-decoration:none;
+    background:white;
+    color:#2563eb;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+}
+
+footer + nav a:hover{
+
+    background:#2563eb;
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+main{
+    grid-template-columns:1fr;
+}
+
+section{
+    grid-column:1;
+}
+
+header h1{
+    font-size:30px;
+}
+
+nav a{
+    width:160px;
+    text-align:center;
+}
+ 
+}
