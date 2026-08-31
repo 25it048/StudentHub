@@ -1,293 +1,434 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile — StudentHub</title>
+  <meta name="description" content="View and manage verified university credentials, academic performance records, technical skills, and student achievements on StudentHub.">
 
-<title>Profile | StudentHub</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="../css/style.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-
-<img src="../image/StudentHub LOGO.png">
-
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="registar.html">Register</a>
-<a href="login.html">Login</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="events.html">Events</a>
-<a href="profile.html" class="active">Profile</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<button class="nav-btn">
-
-Dashboard
-
-</button>
-
-</header>
-
-<section class="features">
-
-<h2>Student Profile</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="../image/profile.jpg" class="profile-img">
-
-<h3>Harsh Patel</h3>
-
-<p>
-
-Information Technology
-
-<br>
-
-Semester 3
-
-<br>
-
-Enrollment : 24IT001
-
-</p>
-
-<a href="profile.html" class="primary">
-Edit Profile
-</a>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-Personal Information
-
-</h3>
-
-<p>
-
-<b>Email :</b> harsh@email.com
-
-<br><br>
-
-<b>Phone :</b> +91 9876543210
-
-<br><br>
-
-<b>Gender :</b> Male
-
-<br><br>
-
-<b>City :</b> Anand
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-Academic Details
-
-</h3>
-
-<p>
-
-College : CHARUSAT
-
-<br><br>
-
-Branch : IT
-
-<br><br>
-
-CGPA : 8.50
-
-<br><br>
-
-Attendance : 92%
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-Skills
-
-</h3>
-
-<p>
-
-✔ HTML
-
-<br>
-
-✔ CSS
-
-<br>
-
-✔ JavaScript
-
-<br>
-
-✔ C++
-
-<br>
-
-✔ Java
-
-<br>
-
-✔ MySQL
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-Achievements
-
-</h3>
-
-<p>
-
-🏆 Hackathon Finalist
-
-<br><br>
-
-🥇 Coding Competition
-
-<br><br>
-
-📜 Web Development Certificate
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-Social Links
-
-</h3>
-
-<p>
-
-<i class="fab fa-github"></i>
-
-GitHub
-
-<br><br>
-
-<i class="fab fa-linkedin"></i>
-
-LinkedIn
-
-<br><br>
-
-<i class="fab fa-instagram"></i>
-
-Instagram
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>Your Digital Campus Portal</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-
-<a href="dashboard.html">Dashboard</a>
-
-<a href="events.html">Events</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-linkedin"></i>
-
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link active" aria-current="page">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="dashboard.html" class="btn btn-outline btn-sm">Dashboard</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ PROFILE HEADER HERO =================-->
+    <section class="profile-header-section" aria-labelledby="profileHeading">
+      <div class="container">
+        
+        <div class="profile-hero-card">
+          <div class="profile-cover-backdrop" aria-hidden="true"></div>
+          
+          <div class="profile-summary-bar">
+            <div class="profile-avatar-wrapper">
+              <img src="../image/profile.jpg" alt="Harsh Patel profile portrait" class="profile-avatar-img" onerror="this.src='../image/Medical_Student2-min.webp';">
+              <span class="avatar-status-dot" title="Verified Student"></span>
+            </div>
+
+            <div class="profile-primary-details">
+              <div class="profile-tags-row">
+                <span class="dept-badge">Information Technology</span>
+                <span class="status-badge status-active">Active Student</span>
+              </div>
+              <h1 id="profileHeading" class="profile-name">Harsh Patel</h1>
+              <p class="profile-meta-line">
+                <span><i class="fa-solid fa-id-card" aria-hidden="true"></i> 24IT001</span>
+                <span>•</span>
+                <span><i class="fa-solid fa-building-columns" aria-hidden="true"></i> CHARUSAT University</span>
+                <span>•</span>
+                <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Semester 3</span>
+              </p>
+            </div>
+
+            <div class="profile-hero-actions">
+              <a href="#editableProfileForm" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
+                <span>Edit Profile</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ PROFILE INFORMATION GRID =================-->
+    <section class="profile-content-section" aria-label="Student Information and Records">
+      <div class="container">
+        
+        <div class="profile-content-grid">
+
+          <!-- Left Column: Details Cards -->
+          <div class="profile-column-wide">
+
+            <!-- Card 1: Academic & Personal Stats -->
+            <div class="dashboard-card profile-details-card">
+              <div class="card-header-clean">
+                <div class="header-icon-box icon-purple">
+                  <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3>Academic Credentials</h3>
+                  <span class="card-sub">Institutional Records</span>
+                </div>
+              </div>
+
+              <div class="details-spec-grid">
+                <div class="spec-item">
+                  <span class="spec-label">Institution</span>
+                  <strong class="spec-val">CHARUSAT University</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Department / Branch</span>
+                  <strong class="spec-val">Information Technology (IT)</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Current Term</span>
+                  <strong class="spec-val">Semester 3</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Enrollment ID</span>
+                  <strong class="spec-val">24IT001</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Cumulative CGPA</span>
+                  <strong class="spec-val text-primary">8.50 / 10.0</strong>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Semester Attendance</span>
+                  <strong class="spec-val text-success">92% (Regular)</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Editable Form Details -->
+            <div class="dashboard-card profile-details-card" id="editableProfileForm">
+              <div class="card-header-clean">
+                <div class="header-icon-box icon-blue">
+                  <i class="fa-solid fa-address-card" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3>Contact & Personal Profile</h3>
+                  <span class="card-sub">Manage Editable Details</span>
+                </div>
+              </div>
+
+              <form class="styled-form profile-edit-form" action="#" method="POST" onsubmit="return false;">
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="profFullName" class="form-label">Full Name</label>
+                    <div class="input-icon-wrap">
+                      <i class="fa-regular fa-user input-icon" aria-hidden="true"></i>
+                      <input type="text" id="profFullName" name="name" class="form-control" value="Harsh Patel" required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="profEmail" class="form-label">Registered Email</label>
+                    <div class="input-icon-wrap">
+                      <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                      <input type="email" id="profEmail" name="email" class="form-control" value="harsh@email.com" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="profPhone" class="form-label">Phone Number</label>
+                    <div class="input-icon-wrap">
+                      <i class="fa-solid fa-phone input-icon" aria-hidden="true"></i>
+                      <input type="tel" id="profPhone" name="phone" class="form-control" value="+91 9876543210" required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="profCity" class="form-label">City / Location</label>
+                    <div class="input-icon-wrap">
+                      <i class="fa-solid fa-city input-icon" aria-hidden="true"></i>
+                      <input type="text" id="profCity" name="city" class="form-control" value="Anand, Gujarat">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label for="profGender" class="form-label">Gender</label>
+                    <select id="profGender" name="gender" class="form-control">
+                      <option value="Male" selected>Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                      <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="profBranch" class="form-label">Department / Branch</label>
+                    <input type="text" id="profBranch" name="branch" class="form-control" value="Information Technology" readonly>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
+                  <span>Save Profile Updates</span>
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Skills, Honors, Socials -->
+          <div class="profile-column-narrow">
+
+            <!-- Skills Box -->
+            <div class="dashboard-card">
+              <div class="card-header-clean">
+                <div class="header-icon-box icon-emerald">
+                  <i class="fa-solid fa-code" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3>Technical Skills</h3>
+                  <span class="card-sub">Core Proficiencies</span>
+                </div>
+              </div>
+
+              <div class="skill-tags-wrapper">
+                <span class="skill-chip"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</span>
+                <span class="skill-chip"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</span>
+                <span class="skill-chip"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
+                <span class="skill-chip"><i class="fa-solid fa-code" aria-hidden="true"></i> C++</span>
+                <span class="skill-chip"><i class="fa-brands fa-java" aria-hidden="true"></i> Java</span>
+                <span class="skill-chip"><i class="fa-solid fa-database" aria-hidden="true"></i> MySQL</span>
+              </div>
+            </div>
+
+            <!-- Achievements Box -->
+            <div class="dashboard-card">
+              <div class="card-header-clean">
+                <div class="header-icon-box icon-amber">
+                  <i class="fa-solid fa-trophy" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3>Achievements</h3>
+                  <span class="card-sub">Campus Recognitions</span>
+                </div>
+              </div>
+
+              <ul class="widget-item-list">
+                <li class="widget-list-row">
+                  <span class="achievement-icon-wrap">🏆</span>
+                  <div class="notice-row-body">
+                    <strong class="item-title">Hackathon Finalist</strong>
+                    <span class="item-meta">Inter-College Sprint 2026</span>
+                  </div>
+                </li>
+                <li class="widget-list-row">
+                  <span class="achievement-icon-wrap">🥇</span>
+                  <div class="notice-row-body">
+                    <strong class="item-title">Coding Competition</strong>
+                    <span class="item-meta">1st Place — Algorithmic Track</span>
+                  </div>
+                </li>
+                <li class="widget-list-row">
+                  <span class="achievement-icon-wrap">📜</span>
+                  <div class="notice-row-body">
+                    <strong class="item-title">Web Development Certificate</strong>
+                    <span class="item-meta">Certified Modern Frontend</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Social Links Box -->
+            <div class="dashboard-card">
+              <div class="card-header-clean">
+                <div class="header-icon-box icon-cyan">
+                  <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3>Connected Profiles</h3>
+                  <span class="card-sub">Social & Repositories</span>
+                </div>
+              </div>
+
+              <div class="profile-social-vertical">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="profile-social-item">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span>GitHub Repository</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square meta-ext-icon" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="profile-social-item">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  <span>LinkedIn Network</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square meta-ext-icon" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="profile-social-item">
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                  <span>Instagram</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square meta-ext-icon" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Your unified digital campus portal engineered to simplify academic coordination, announcements, and student participation.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

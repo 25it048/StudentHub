@@ -1,769 +1,618 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>StudentHub — Digital Campus Portal</title>
+  <meta name="description" content="StudentHub is a modern, unified digital campus portal for managing academics, campus events, real-time notices, and student profiles.">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-<title>StudentHub | Digital Campus Portal</title>
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<meta name="description"
-content="StudentHub - Smart Digital Campus Portal">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-<link rel="icon" href="image/favicon.ico">
-
-<link rel="stylesheet" href="../css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<!--================ NAVBAR =================-->
-
-<header>
-
-<div>
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html" class="active">Home</a>
-
-<a href="about.html">About</a>
-
-<a href="registar.html">Register</a>
-
-<a href="login.html">Login</a>
-
-<a href="dashboard.html">Dashboard</a>
-
-<a href="events.html">Events</a>
-
-<a href="profile.html">Profile</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="faq.html">FAQ</a>
-
-<a href="feedback.html">Feedback</a>
-
-<a href="admin.html">Admin</a>
-
-</nav>
-
-<a href="../pages/registar.html" class="nav-btn">
-
-Join Now
-
-</a>
-
-</header>
-
-<!--================ HERO =================-->
-
-<section class="hero">
-
-<div class="left">
-
-<span class="tag">
-
-🎓 Smart Campus Platform
-
-</span>
-
-<h1>
-
-Empowering Students With
-
-StudentHub
-
-</h1>
-
-<p>
-
-StudentHub is a modern digital campus portal designed
-to simplify student life. Register for events, manage
-your academic profile, receive important notices and
-stay connected with your college community.
-
-</p>
-
-<div class="buttons">
-
-<a href="../pages/registar.html"
-class="primary">
-
-Register Now
-
-</a>
-
-<a href="login.html"
-class="secondary">
-
-Login
-
-</a>
-
-</div>
-
-</div>
-
-<div class="right">
-
-<img src="../image/DSC2576.jpg"
-alt="Students">
-
-</div>
-
-</section>
-
-<!--================ STATISTICS =================-->
-
-<section class="stats">
-
-<div class="stat">
-
-<h2>
-
-5000+
-
-</h2>
-
-<p>
-
-Students
-
-</p>
-
-</div>
-
-<div class="stat">
-
-<h2>
-
-150+
-
-</h2>
-
-<p>
-
-Events
-
-</p>
-
-</div>
-
-<div class="stat">
-
-<h2>
-
-60+
-
-</h2>
-
-<p>
-
-Faculty
-
-</p>
-
-</div>
-
-<div class="stat">
-
-<h2>
-
-98%
-
-</h2>
-
-<p>
-
-Success Rate
-
-</p>
-
-</div>
-
-</section>
-
-<!--================ FEATURES =================-->
-
-<section class="features">
-
-<h2>
-
-Why Choose StudentHub?
-
-</h2>
-
-<p class="subtitle">
-
-Everything you need for your college journey
-in one place.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-user-plus"></i>
-
-<h3>
-
-Easy Registration
-
-</h3>
-
-<p>
-
-Quick and secure student registration process.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-calendar-days"></i>
-
-<h3>
-
-Campus Events
-
-</h3>
-
-<p>
-
-Join hackathons, seminars and workshops.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-chart-column"></i>
-
-<h3>
-
-Dashboard
-
-</h3>
-
-<p>
-
-Monitor attendance, notices and academics.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-user-graduate"></i>
-
-<h3>
-
-Student Profile
-
-</h3>
-
-<p>
-
-Manage your personal and academic profile.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-bell"></i>
-
-<h3>
-
-Instant Notices
-
-</h3>
-
-<p>
-
-Receive important college announcements instantly.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-comments"></i>
-
-<h3>
-
-Feedback
-
-</h3>
-
-<p>
-
-Share suggestions and improve StudentHub.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-<!--================ ABOUT =================-->
-
-<section class="about">
-
-<div class="about-left">
-
-<img src="../image/Medical_Student2-min.webp" alt="About StudentHub">
-
-</div>
-
-<div class="about-right">
-
-<span class="tag">
-
-About StudentHub
-
-</span>
-
-<h2>
-
-Building a Smarter Digital Campus
-
-</h2>
-
-<p>
-
-StudentHub provides students with a single platform to
-manage academics, participate in campus events,
-receive notices, communicate with faculty and
-access important resources anytime, anywhere.
-
-</p>
-
-<ul class="about-list">
-
-<li><i class="fa-solid fa-circle-check"></i> Easy Student Registration</li>
-
-<li><i class="fa-solid fa-circle-check"></i> Secure Login System</li>
-
-<li><i class="fa-solid fa-circle-check"></i> Event Management</li>
-
-<li><i class="fa-solid fa-circle-check"></i> Academic Dashboard</li>
-
-<li><i class="fa-solid fa-circle-check"></i> Student Profile Management</li>
-
-</ul>
-
-<a href="about.html" class="primary">
-
-Learn More
-
-</a>
-
-</div>
-
-</section>
-
-<!--================ EVENTS =================-->
-
-<section class="event">
-
-<h2>
-
-Upcoming Campus Events
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="../image/workshop.jpg" class="event-img">
-
-<h3>
-
-Web Development Workshop
-
-</h3>
-
-<p>
-
-📅 15 August 2026
-
-</p>
-
-<p>
-
-Learn HTML, CSS, JavaScript and modern web development.
-
-</p>
-
-<a href="events.html" class="primary">
-
-Register
-
-</a>
-
-</div>
-
-<div class="card">
-
-<img src="../image/hackthon.jpg" class="event-img">
-
-<h3>
-
-Hackathon 2026
-
-</h3>
-
-<p>
-
-📅 22 August 2026
-
-</p>
-
-<p>
-
-Build innovative solutions and win exciting prizes.
-
-</p>
-
-<a href="events.html" class="primary">
-
-Join Now
-
-</a>
-
-</div>
-
-<div class="card">
-
-<img src="../image/ai.jpg" class="event-img">
-
-<h3>
-
-AI Seminar
-
-</h3>
-
-<p>
-
-📅 30 August 2026
-
-</p>
-
-<p>
-
-Explore Artificial Intelligence with industry experts.
-
-</p>
-
-<a href="events.html" class="primary">
-
-Reserve Seat
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ NOTICE =================-->
-
-<section class="notice">
-
-<h2>
-
-Latest Notices
-
-</h2>
-
-<div class="notice-box">
-
-<ul>
-
-<li>📢 Lab Submission on Friday</li>
-
-<li>📢 Web Workshop Registration Open</li>
-
-<li>📢 Hackathon Registration Started</li>
-
-<li>📢 Semester Project Review Next Week</li>
-
-<li>📢 Placement Training Batch Begins Soon</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<!--================ TESTIMONIAL =================-->
-
-<section class="features">
-
-<h2>
-
-What Students Say
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-user-graduate"></i>
-
-<h3>
-
-Rahul Shah
-
-</h3>
-
-<p>
-
-★★★★★
-
-</p>
-
-<p>
-
-StudentHub makes event registration and notices
-very easy.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-user-graduate"></i>
-
-<h3>
-
-Priya Patel
-
-</h3>
-
-<p>
-
-★★★★★
-
-</p>
-
-<p>
-
-Simple interface and beautiful dashboard.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-user-graduate"></i>
-
-<h3>
-
-Meet Joshi
-
-</h3>
-
-<p>
-
-★★★★★
-
-</p>
-
-<p>
-
-One platform for everything a student needs.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ NEWSLETTER =================-->
-
-<section class="newsletter">
-
-<h2>
-
-Subscribe to Our Newsletter
-
-</h2>
-
-<p>
-
-Receive latest updates about workshops,
-hackathons and campus events.
-
-</p>
-
-<form>
-
-<input
-type="email"
-placeholder="Enter your Email">
-
-<button
-type="submit"
-class="primary">
-
-Subscribe
-
-</button>
-
-</form>
-
-</section>
-
-<!--================ FOOTER =================-->
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>
-
-StudentHub
-
-</h3>
-
-<p>
-
-Your Smart Digital Campus Portal.
-
-</p>
-
-</div>
-
-<div>
-
-<h3>
-
-Quick Links
-
-</h3>
-
-<a href="index.html">Home</a>
-
-<a href="about.html">About</a>
-
-<a href="events.html">Events</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="faq.html">FAQ</a>
-
-</div>
-
-<div>
-
-<h3>
-
-Contact
-
-</h3>
-
-<p>
-
-📍 CHARUSAT University
-
-</p>
-
-<p>
-
-📧 studenthub@gmail.com
-
-</p>
-
-<p>
-
-📞 +91 9876543210
-
-</p>
-
-</div>
-
-<div>
-
-<h3>
-
-Follow Us
-
-</h3>
-
-<div class="social">
-
-<a href="#">
-
-<i class="fab fa-facebook-f"></i>
-
-</a>
-
-<a href="#">
-
-<i class="fab fa-instagram"></i>
-
-</a>
-
-<a href="#">
-
-<i class="fab fa-linkedin-in"></i>
-
-</a>
-
-<a href="#">
-
-<i class="fab fa-github"></i>
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-ghost">Login</a>
+        <a href="registar.html" class="btn btn-primary">Join Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ HERO SECTION =================-->
+    <section class="hero-section" aria-labelledby="heroTitle">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Next-Gen Smart Campus Platform</span>
+          </div>
+
+          <h1 id="heroTitle" class="hero-title">
+            Empowering Campus Life With <span class="gradient-text">StudentHub</span>
+          </h1>
+
+          <p class="hero-description">
+            Your centralized digital hub for academic progress, instant college notifications, streamlined workshop registrations, and collaborative peer networking.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="registar.html" class="btn btn-primary btn-lg">
+              <span>Register Now</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="login.html" class="btn btn-outline btn-lg">
+              <span>Student Login</span>
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              <span>Role-Based Access</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              <span>Real-Time Notices</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+              <span>Fully Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="image-card-wrapper">
+            <div class="image-backdrop-glow" aria-hidden="true"></div>
+            <img src="../image/DSC2576.jpg" alt="University students collaborating with laptops on campus" class="hero-img" loading="eager">
+            
+            <div class="floating-stat-badge badge-top">
+              <i class="fa-solid fa-circle-check text-success" aria-hidden="true"></i>
+              <div>
+                <strong>Active Portal</strong>
+                <span>Spring & Fall Sessions</span>
+              </div>
+            </div>
+
+            <div class="floating-stat-badge badge-bottom">
+              <i class="fa-solid fa-chart-line text-primary" aria-hidden="true"></i>
+              <div>
+                <strong>5000+</strong>
+                <span>Enrolled Students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ STATISTICS BAR =================-->
+    <section class="stats-section" aria-label="Campus Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i></div>
+            <div class="stat-content">
+              <h2 class="stat-number">5,000+</h2>
+              <p class="stat-label">Registered Students</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></div>
+            <div class="stat-content">
+              <h2 class="stat-number">150+</h2>
+              <p class="stat-label">Events & Seminars</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></div>
+            <div class="stat-content">
+              <h2 class="stat-number">60+</h2>
+              <p class="stat-label">Faculty Advisors</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-award" aria-hidden="true"></i></div>
+            <div class="stat-content">
+              <h2 class="stat-number">98%</h2>
+              <p class="stat-label">Satisfaction Rate</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--================ CORE FEATURES =================-->
+    <section class="features-section" aria-labelledby="featuresTitle">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Features & Ecosystem</span>
+          <h2 id="featuresTitle" class="section-title">Engineered for Everyday Academic Success</h2>
+          <p class="section-description">
+            Everything you need throughout your university tenure integrated into one friction-free workflow.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-id-card-clip" aria-hidden="true"></i></div>
+            <h3>Simple Onboarding</h3>
+            <p>Direct profile initialization with student IDs, department tagging, and secure authentication.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></div>
+            <h3>Campus Events & Hackathons</h3>
+            <p>Discover workshops, submit team registrations, and monitor schedules directly from your feed.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div>
+            <h3>Centralized Dashboard</h3>
+            <p>At-a-glance monitoring of semester milestones, academic records, and pending submissions.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-user-gear" aria-hidden="true"></i></div>
+            <h3>Comprehensive Profile</h3>
+            <p>Update contact channels, verify department records, and keep your student portfolio synchronized.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+            <h3>Priority Circulars</h3>
+            <p>Never miss exam schedules, faculty notices, or placement cell advisories with real-time updates.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+            <h3>Direct Feedback Loop</h3>
+            <p>Submit campus suggestions and queries to maintain high transparency and swift administration resolution.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ ABOUT OVERVIEW =================-->
+    <section class="about-overview-section" aria-labelledby="aboutOverviewTitle">
+      <div class="container about-grid">
+        
+        <div class="about-media">
+          <div class="about-media-frame">
+            <img src="../image/Medical_Student2-min.webp" alt="University student in campus discussion" class="about-img" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-subtitle">About StudentHub</span>
+          <h2 id="aboutOverviewTitle" class="section-title">Bridging Administration, Faculty, and Students</h2>
+          <p>
+            StudentHub consolidates dispersed campus communication into a structured, responsive ecosystem. Designed specifically to reduce manual bureaucratic delays and ensure every student stays informed.
+          </p>
+
+          <ul class="feature-checklist">
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span>Integrated single-sign-on verification with credential safety</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span>Live tracking for inter-college hackathons and academic seminars</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span>Structured administrative controls for timely notice broadcast</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span>High-speed accessible architecture built for any device</span>
+            </li>
+          </ul>
+
+          <div class="about-actions">
+            <a href="about.html" class="btn btn-primary">
+              <span>Read Full Mission</span>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ UPCOMING EVENTS =================-->
+    <section class="events-preview-section" aria-labelledby="eventsPreviewTitle">
+      <div class="container">
+        
+        <div class="section-header-flex">
+          <div>
+            <span class="section-subtitle">Calendar</span>
+            <h2 id="eventsPreviewTitle" class="section-title">Upcoming Campus Events</h2>
+          </div>
+          <a href="events.html" class="btn btn-outline">View All Events</a>
+        </div>
+
+        <div class="events-grid">
+          
+          <!-- Event 1 -->
+          <article class="event-card">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/workshop.jpg" alt="Web Development workshop banner" class="event-thumb" loading="lazy">
+              <span class="event-badge">Tech Workshop</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-08-15">15 August 2026</time>
+              </div>
+              <h3 class="event-heading">Web Development Bootcamp</h3>
+              <p class="event-snippet">
+                Hands-on frontend engineering covering semantic HTML5, modern CSS architectures, and JavaScript workflows.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Lab 302</span>
+                <a href="events.html" class="btn btn-primary btn-sm">Register</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 2 -->
+          <article class="event-card">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/hackthon.jpg" alt="Hackathon 2026 event banner" class="event-thumb" loading="lazy">
+              <span class="event-badge">Competition</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-08-22">22 August 2026</time>
+              </div>
+              <h3 class="event-heading">Campus Hackathon 2026</h3>
+              <p class="event-snippet">
+                36-hour rapid prototyping marathon. Form inter-disciplinary teams, build real products, and pitch to industry leads.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Central Auditorium</span>
+                <a href="events.html" class="btn btn-primary btn-sm">Join Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 3 -->
+          <article class="event-card">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/ai.jpg" alt="AI Seminar promotional poster" class="event-thumb" loading="lazy">
+              <span class="event-badge">Seminar</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-08-30">30 August 2026</time>
+              </div>
+              <h3 class="event-heading">Applied AI & Machine Learning</h3>
+              <p class="event-snippet">
+                Interactive masterclass exploring modern LLMs, autonomous systems, and prospective computing career pathways.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Seminar Hall B</span>
+                <a href="events.html" class="btn btn-primary btn-sm">Reserve Seat</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ CAMPUS NOTICE BOARD =================-->
+    <section class="notices-section" aria-labelledby="noticesTitle">
+      <div class="container">
+        <div class="notice-board-wrapper">
+          
+          <div class="notice-board-header">
+            <div class="notice-header-left">
+              <i class="fa-solid fa-bell notice-bell-icon" aria-hidden="true"></i>
+              <div>
+                <h2 id="noticesTitle" class="notice-title">Live Campus Notice Board</h2>
+                <p class="notice-subtitle">Official announcements verified by the University Academic Cell</p>
+              </div>
+            </div>
+            <span class="status-indicator">Updated Today</span>
+          </div>
+
+          <div class="notice-list-container">
+            <ul class="notice-list" role="list">
+              <li class="notice-item priority-high">
+                <div class="notice-tag">Urgent</div>
+                <div class="notice-info">
+                  <span class="notice-text">Department Laboratory Submissions due this Friday by 05:00 PM.</span>
+                  <span class="notice-timestamp">Academic Cell • 2 hrs ago</span>
+                </div>
+              </li>
+              <li class="notice-item">
+                <div class="notice-tag">Workshop</div>
+                <div class="notice-info">
+                  <span class="notice-text">Web Development Workshop registration seats extended for second-year students.</span>
+                  <span class="notice-timestamp">CS Department • 5 hrs ago</span>
+                </div>
+              </li>
+              <li class="notice-item">
+                <div class="notice-tag">Competition</div>
+                <div class="notice-info">
+                  <span class="notice-text">Hackathon 2026 problem statements released. Register team rosters before slots fill.</span>
+                  <span class="notice-timestamp">Tech Club • Yesterday</span>
+                </div>
+              </li>
+              <li class="notice-item">
+                <div class="notice-tag">Review</div>
+                <div class="notice-info">
+                  <span class="notice-text">Semester Capstone Project initial documentation review scheduled for next week.</span>
+                  <span class="notice-timestamp">Dean Office • 2 days ago</span>
+                </div>
+              </li>
+              <li class="notice-item">
+                <div class="notice-tag">Placement</div>
+                <div class="notice-info">
+                  <span class="notice-text">Pre-placement aptitude training batch orientation starts this coming Monday.</span>
+                  <span class="notice-timestamp">Placement Cell • 3 days ago</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--================ TESTIMONIALS =================-->
+    <section class="testimonials-section" aria-labelledby="testimonialsTitle">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Student Experiences</span>
+          <h2 id="testimonialsTitle" class="section-title">Built and Approved by Students</h2>
+          <p class="section-description">
+            Discover how StudentHub simplifies daily academic coordination and campus engagement.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "StudentHub completely eliminated the friction of tracking upcoming events and submission deadlines. It is fast, clean, and reliable."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+              <div>
+                <cite class="author-name">Rahul Shah</cite>
+                <span class="author-meta">B.Tech Computer Science</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "The design is incredibly modern. Checking notices on mobile between classes takes seconds without any clutter or broken tables."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+              <div>
+                <cite class="author-name">Priya Patel</cite>
+                <span class="author-meta">Information Technology</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "One single place for our academic notices, profile records, and hackathon registrations. Exactly what our university campus needed."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fa-solid fa-user-graduate"></i></div>
+              <div>
+                <cite class="author-name">Meet Joshi</cite>
+                <span class="author-meta">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ NEWSLETTER CALLOUT =================-->
+    <section class="newsletter-section" aria-labelledby="newsletterTitle">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-content">
+            <h2 id="newsletterTitle" class="newsletter-title">Stay Ahead of Campus Events</h2>
+            <p class="newsletter-text">
+              Subscribe to get curated notices, hackathon schedules, and critical academic reminders sent directly to your student email.
+            </p>
+          </div>
+          
+          <form class="newsletter-form" action="#" method="POST" onsubmit="return false;">
+            <div class="form-input-group">
+              <label for="newsletterEmail" class="sr-only">Email address</label>
+              <input type="email" id="newsletterEmail" name="email" class="form-control" placeholder="Enter your university email..." required autocomplete="email">
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <span class="form-hint">No spam. Only essential campus updates.</span>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            A unified digital campus management platform empowering higher-education institutions with modern student utilities.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. Developed for modern college workflows. All rights reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

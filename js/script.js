@@ -1,216 +1,236 @@
-console.log("StudentHub JS Loded Successfully");
-console.log("StudentHUb");
-// ===============================
-// StudentHub JavaScript
-// ===============================
+/**
+ * StudentHub — Digital Campus Portal
+ * Core Client-Side Architecture & Interactivity
+ */
 
-// Sticky Navbar Shadow
-const header = document.querySelector("header");
+document.addEventListener('DOMContentLoaded', () => {
+  'use strict';
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-        header.style.boxShadow = "0 10px 25px rgba(0,0,0,0.15)";
-        header.style.background = "#ffffff";
-    } else {
-        header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.08)";
+  // ==========================================
+  // 1. THEME INITIALIZATION & TOGGLE SYSTEM
+  // ==========================================
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  const htmlRoot = document.documentElement;
+
+  const getPreferredTheme = () => {
+    const storedTheme = localStorage.getItem('studenthub_theme');
+    if (storedTheme) {
+      return storedTheme;
     }
-});
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  };
 
-// =====================================
-// Smooth Scroll
-// =====================================
+  const applyTheme = (theme) => {
+    htmlRoot.setAttribute('data-theme', theme);
+    localStorage.setItem('studenthub_theme', theme);
+  };
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
+  // Initial load theme application
+  applyTheme(getPreferredTheme());
 
-    link.addEventListener("click", function(e){
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = htmlRoot.getAttribute('data-theme') || 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(newTheme);
+    });
+  }
 
-        e.preventDefault();
+  // Listen to OS system theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('studenthub_theme')) {
+      applyTheme(e.matches ? 'dark' : 'light');
+    }
+  });
 
-        const target=document.querySelector(this.getAttribute("href"));
+  // ==========================================
+  // 2. MOBILE NAVIGATION MENU (HAMBURGER)
+  // ==========================================
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mainNav = document.getElementById('mainNav');
 
-        if(target){
-
-            target.scrollIntoView({
-
-                behavior:"smooth"
-
-            });
-
-        }
-
+  if (hamburgerBtn && mainNav) {
+    hamburgerBtn.addEventListener('click', () => {
+      const isExpanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+      hamburgerBtn.setAttribute('aria-expanded', String(!isExpanded));
+      hamburgerBtn.classList.toggle('is-active');
+      mainNav.classList.toggle('is-open');
     });
 
-});
-
-// =====================================
-// Scroll Reveal Animation
-// =====================================
-
-const cards = document.querySelectorAll(".card,.event-card,.notice-box,.about-left,.about-right");
-
-function reveal(){
-
-    const trigger = window.innerHeight * 0.85;
-
-    cards.forEach(card=>{
-
-        const top = card.getBoundingClientRect().top;
-
-        if(top < trigger){
-
-            card.style.opacity="1";
-
-            card.style.transform="translateY(0)";
-
-        }
-
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!mainNav.contains(event.target) && !hamburgerBtn.contains(event.target)) {
+        mainNav.classList.remove('is-open');
+        hamburgerBtn.classList.remove('is-active');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
     });
+  }
 
-}
+  // ==========================================
+  // 3. ACCESSIBLE FAQ ACCORDIONS
+  // ==========================================
+  const faqHeaders = document.querySelectorAll('.faq-accordion-header');
 
-cards.forEach(card=>{
+  faqHeaders.forEach((header) => {
+    header.addEventListener('click', () => {
+      const parentItem = header.parentElement;
+      const isExpanded = header.getAttribute('aria-expanded') === 'true';
+      const body = parentItem.querySelector('.faq-accordion-body');
 
-    card.style.opacity="0";
+      // Close all other accordion items for clean single-view
+      faqHeaders.forEach((otherHeader) => {
+        if (otherHeader !== header) {
+          otherHeader.setAttribute('aria-expanded', 'false');
+          otherHeader.parentElement.classList.remove('is-open');
+          const otherBody = otherHeader.parentElement.querySelector('.faq-accordion-body');
+          if (otherBody) otherBody.hidden = true;
+        }
+      });
 
-    card.style.transform="translateY(50px)";
+      // Toggle current item
+      header.setAttribute('aria-expanded', String(!isExpanded));
+      parentItem.classList.toggle('is-open', !isExpanded);
+      if (body) {
+        body.hidden = isExpanded;
+      }
+    });
+  });
 
-    card.style.transition="all .8s ease";
+  // ==========================================
+  // 4. PASSWORD VISIBILITY TOGGLE
+  // ==========================================
+  const passwordToggles = document.querySelectorAll('.password-toggle-btn');
 
+  passwordToggles.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const targetInput = document.getElementById(targetId);
+      const icon = btn.querySelector('.toggle-eye-icon');
+
+      if (targetInput) {
+        const isPassword = targetInput.type === 'password';
+        targetInput.type = isPassword ? 'text' : 'password';
+
+        if (icon) {
+          icon.classList.toggle('fa-eye', isPassword);
+          icon.classList.toggle('fa-eye-slash', !isPassword);
+        }
+      }
+    });
+  });
+
+  // ==========================================
+  // 5. EVENT FILTERING & LIVE SEARCH
+  // ==========================================
+  const searchInput = document.getElementById('eventSearchInput');
+  const filterPills = document.querySelectorAll('.filter-pill');
+  const eventCards = document.querySelectorAll('.events-catalog-section .event-card');
+
+  const filterEvents = () => {
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const activePill = document.querySelector('.filter-pill.active');
+    const selectedCategory = activePill ? activePill.getAttribute('data-category') : 'all';
+
+    eventCards.forEach((card) => {
+      const cardCategory = card.getAttribute('data-category') || '';
+      const title = card.querySelector('.event-heading')?.textContent.toLowerCase() || '';
+      const snippet = card.querySelector('.event-snippet')?.textContent.toLowerCase() || '';
+      const venue = card.querySelector('.event-venue')?.textContent.toLowerCase() || '';
+
+      const matchesCategory = selectedCategory === 'all' || cardCategory === selectedCategory;
+      const matchesSearch = title.includes(query) || snippet.includes(query) || venue.includes(query);
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  };
+
+  if (searchInput) {
+    searchInput.addEventListener('input', filterEvents);
+  }
+
+  filterPills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach((p) => p.classList.remove('active'));
+      pill.classList.add('active');
+      filterEvents();
+    });
+  });
+
+  // ==========================================
+  // 6. INTERACTIVE STAR RATING (FEEDBACK)
+  // ==========================================
+  const ratingButtons = document.querySelectorAll('.star-rating-btn');
+  const ratingValueInput = document.getElementById('ratingValueInput');
+
+  if (ratingButtons.length > 0) {
+    ratingButtons.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const rating = index + 1;
+        if (ratingValueInput) ratingValueInput.value = String(rating);
+
+        ratingButtons.forEach((b, idx) => {
+          b.classList.toggle('active', idx < rating);
+        });
+      });
+    });
+  }
+
+  // ==========================================
+  // 7. SMOOTH SCROLL FOR IN-PAGE ANCHORS
+  // ==========================================
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+
+  // ==========================================
+  // 8. ACCESSIBLE BACK TO TOP BUTTON
+  // ==========================================
+  const backToTopBtn = document.createElement('button');
+  backToTopBtn.type = 'button';
+  backToTopBtn.setAttribute('aria-label', 'Back to top');
+  backToTopBtn.className = 'btn btn-primary';
+  backToTopBtn.innerHTML = '<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>';
+
+  Object.assign(backToTopBtn.style, {
+    position: 'fixed',
+    bottom: '2rem',
+    right: '2rem',
+    width: '44px',
+    height: '44px',
+    padding: '0',
+    borderRadius: '50%',
+    zIndex: '999',
+    display: 'none',
+    boxShadow: 'var(--shadow-lg)'
+  });
+
+  document.body.appendChild(backToTopBtn);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      backToTopBtn.style.display = 'inline-flex';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  console.log('StudentHub initialized cleanly in ' + (htmlRoot.getAttribute('data-theme') || 'light') + ' mode.');
 });
-
-window.addEventListener("scroll",reveal);
-
-reveal();
-
-// =====================================
-// Button Hover Effect
-// =====================================
-
-const buttons=document.querySelectorAll("button");
-
-buttons.forEach(btn=>{
-
-btn.addEventListener("mouseenter",()=>{
-
-btn.style.transform="scale(1.05)";
-
-});
-
-btn.addEventListener("mouseleave",()=>{
-
-btn.style.transform="scale(1)";
-
-});
-
-});
-
-// =====================================
-// Active Navigation
-// =====================================
-
-const navLinks=document.querySelectorAll("nav a");
-
-navLinks.forEach(link=>{
-
-link.addEventListener("click",function(){
-
-navLinks.forEach(item=>item.classList.remove("active"));
-
-this.classList.add("active");
-
-});
-
-});
-
-// =====================================
-// Back To Top Button
-// =====================================
-
-const topBtn=document.createElement("button");
-
-topBtn.innerHTML="↑";
-
-document.body.appendChild(topBtn);
-
-topBtn.style.position="fixed";
-topBtn.style.bottom="30px";
-topBtn.style.right="30px";
-topBtn.style.width="50px";
-topBtn.style.height="50px";
-topBtn.style.border="none";
-topBtn.style.borderRadius="50%";
-topBtn.style.background="#2563eb";
-topBtn.style.color="#fff";
-topBtn.style.fontSize="20px";
-topBtn.style.cursor="pointer";
-topBtn.style.display="none";
-topBtn.style.zIndex="1000";
-topBtn.style.boxShadow="0 10px 25px rgba(0,0,0,.2)";
-
-window.addEventListener("scroll",()=>{
-
-if(window.scrollY>300){
-
-topBtn.style.display="block";
-
-}else{
-
-topBtn.style.display="none";
-
-}
-
-});
-
-topBtn.addEventListener("click",()=>{
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-});
-
-// =====================================
-// Typing Effect
-// =====================================
-
-const heading=document.querySelector(".left h1");
-
-if(heading){
-
-const text=heading.innerHTML;
-
-heading.innerHTML="";
-
-let i=0;
-
-function type(){
-
-if(i<text.length){
-
-heading.innerHTML+=text.charAt(i);
-
-i++;
-
-setTimeout(type,40);
-
-}
-
-}
-
-type();
-
-}
-
-// =====================================
-// Welcome Message
-// =====================================
-
-window.addEventListener("load",()=>{
-
-console.log("Welcome to StudentHub");
-
-}); 

@@ -1,228 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | StudentHub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>About Us — StudentHub</title>
+  <meta name="description" content="Discover the mission, core values, and technological ecosystem behind StudentHub — your smart digital campus portal.">
 
-    <link rel="stylesheet" href="../css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-<header>
-
-<div class="logo">
-
-<img src="../image/StudentHub LOGO.png">
-
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html" class="active">About</a>
-<a href="registar.html">Register</a>
-<a href="login.html">Login</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="events.html">Events</a>
-<a href="profile.html">Profile</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<button class="nav-btn">
-
-Join Now
-
-</button>
-
-</header>
-
-<section class="hero">
-
-<div class="left">
-
-<span class="tag">
-
-About StudentHub
-
-</span>
-
-<h1>
-
-Empowering Students Through Technology
-
-</h1>
-
-<p>
-
-StudentHub is a smart digital campus portal developed to make student life easier. It provides one place for registration, academic updates, event participation, profile management and communication.
-
-</p>
-
-</div>
-
-<div class="right">
-
-<img src="../image/image.png" alt="About">
-
-</div>
-
-</section>
-
-<section class="features">
-
-<h2>Our Mission</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-graduation-cap"></i>
-
-<h3>Quality Education</h3>
-
-<p>
-
-Provide students with a modern digital platform.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-users"></i>
-
-<h3>Student Community</h3>
-
-<p>
-
-Connect students, faculty and campus activities.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-laptop-code"></i>
-
-<h3>Technology</h3>
-
-<p>
-
-Use modern web technology for better learning.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="about">
-
-<div class="about-left">
-
-<img src="../image/image.png">
-
-</div>
-
-<div class="about-right">
-
-<h2>Why Choose StudentHub?</h2>
-
-<p>
-
-✔ Easy Student Registration<br><br>
-
-✔ Manage Academic Profile<br><br>
-
-✔ Join College Events<br><br>
-
-✔ Get Important Notices<br><br>
-
-✔ Secure Dashboard<br><br>
-
-✔ Responsive Design
-
-</p>
-
-<button>
-
-Explore More
-
-</button>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>Your Digital Campus Portal</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-
-<a href="events.html">Events</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-linkedin"></i>
-
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-ghost">Login</a>
+        <a href="registar.html" class="btn btn-primary">Join Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ ABOUT HERO SECTION =================-->
+    <section class="hero-section page-hero" aria-labelledby="aboutHeroTitle">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Our Mission & Foundation</span>
+          </div>
+
+          <h1 id="aboutHeroTitle" class="hero-title">
+            Empowering Students Through <span class="gradient-text">Modern Technology</span>
+          </h1>
+
+          <p class="hero-description">
+            StudentHub is a unified digital campus portal engineered to simplify student life. We provide one integrated ecosystem for academic tracking, event coordination, verified notices, and campus-wide communication.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="registar.html" class="btn btn-primary btn-lg">
+              <span>Join StudentHub</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="events.html" class="btn btn-outline btn-lg">
+              <span>Explore Campus Events</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="image-card-wrapper">
+            <div class="image-backdrop-glow" aria-hidden="true"></div>
+            <img src="../image/image.png" alt="University campus environment and student collaboration" class="hero-img" loading="eager">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ OUR MISSION PILLARS =================-->
+    <section class="features-section" aria-labelledby="missionTitle">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Core Pillars</span>
+          <h2 id="missionTitle" class="section-title">Driven by Purpose and Innovation</h2>
+          <p class="section-description">
+            Our architectural foundation focuses on accessibility, student engagement, and seamless digital administration.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+            <h3>Quality Education</h3>
+            <p>Empowering students with a fast, modern digital interface that reduces administrative friction and enhances daily productivity.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+            <h3>Student Community</h3>
+            <p>Bridging students, faculty advisors, and departmental committees to foster collaborative hackathons, workshops, and seminars.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+            <h3>Modern Technology</h3>
+            <p>Leveraging high-performance web standards, accessible design systems, and responsive layouts built for every modern screen.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ WHY CHOOSE STUDENTHUB =================-->
+    <section class="about-overview-section" aria-labelledby="whyChooseTitle">
+      <div class="container about-grid">
+        
+        <div class="about-media">
+          <div class="about-media-frame">
+            <img src="../image/image.png" alt="StudentHub portal illustration and platform overview" class="about-img" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-subtitle">Why Choose StudentHub?</span>
+          <h2 id="whyChooseTitle" class="section-title">Designed to Modernize the College Experience</h2>
+          <p>
+            Traditional campus management often relies on fragmented notice boards and scattered portals. StudentHub unifies your essential university interactions into a single, intuitive platform.
+          </p>
+
+          <ul class="feature-checklist">
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span><strong>Easy Student Registration:</strong> Rapid onboarding with verified student IDs and departments.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span><strong>Academic Profile Management:</strong> Keep contact details, records, and credentials synchronized.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span><strong>Direct Event Participation:</strong> One-click RSVP for technical workshops, hackathons, and guest talks.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span><strong>Instant College Notices:</strong> Verified announcements from academic and placement divisions.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span><strong>Secure Personal Dashboard:</strong> Dedicated space to review active courses, deadlines, and submissions.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <span><strong>Fully Responsive Architecture:</strong> Fluid layout on mobile devices, tablets, and high-res displays.</span>
+            </li>
+          </ul>
+
+          <div class="about-actions">
+            <a href="events.html" class="btn btn-primary">
+              <span>Explore More</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Your smart digital campus portal designed to bridge student life, academics, and university administration.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
+
 </html>

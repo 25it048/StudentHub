@@ -1,238 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | StudentHub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="../css/style.css">
+  <title>Student Registration — StudentHub</title>
+  <meta name="description" content="Create your StudentHub account to access student dashboards, verified campus notices, and one-click event registrations.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
-<header>
-
-<div class="logo">
-
-<img src="../image/StudentHub LOGO.png">
-
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="registar.html" class="active">Register</a>
-<a href="login.html">Login</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="events.html">Events</a>
-<a href="profile.html">Profile</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<button class="nav-btn">
-
-Join Now
-
-</button>
-
-</header>
-
-<section class="hero">
-
-<div class="left">
-
-<span class="tag">
-
-Student Registration
-
-</span>
-
-<h1>
-
-Create Your Student Account
-
-</h1>
-
-<p>
-
-Register now to access StudentHub services, participate in campus events and manage your academic profile.
-
-</p>
-
-</div>
-
-<div class="right">
-
-<img src="../image/image.png">
-
-</div>
-
-</section>
-
-<section class="features">
-
-<h2>Registration Form</h2>
-
-<div class="form-container">
-
-<form>
-
-<div class="input-box">
-
-<label>Full Name</label>
-
-<input type="text" placeholder="Enter Full Name">
-
-</div>
-
-<div class="input-box">
-
-<label>Email</label>
-
-<input type="email" placeholder="Enter Email">
-
-</div>
-
-<div class="input-box">
-
-<label>Phone</label>
-
-<input type="tel" placeholder="Enter Phone Number">
-
-</div>
-
-<div class="input-box">
-
-<label>Enrollment Number</label>
-
-<input type="text" placeholder="Enter Enrollment Number">
-
-</div>
-
-<div class="input-box">
-
-<label>Department</label>
-
-<select>
-
-<option>Information Technology</option>
-<option>Computer Engineering</option>
-<option>Mechanical Engineering</option>
-<option>Civil Engineering</option>
-
-</select>
-
-</div>
-
-<div class="input-box">
-
-<label>Semester</label>
-
-<select>
-
-<option>Semester 1</option>
-<option>Semester 2</option>
-<option>Semester 3</option>
-<option>Semester 4</option>
-<option>Semester 5</option>
-<option>Semester 6</option>
-
-</select>
-
-</div>
-
-<div class="input-box">
-
-<label>Password</label>
-
-<input type="password" placeholder="Password">
-
-</div>
-
-<div class="input-box">
-
-<label>Confirm Password</label>
-
-<input type="password" placeholder="Confirm Password">
-
-</div>
-
-<button class="primary">
-
-Register
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>Your Digital Campus Portal</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-
-<a href="about.html">About</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-linkedin"></i>
-
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-ghost">Login</a>
+        <a href="registar.html" class="btn btn-primary active" aria-current="page">Join Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ REGISTRATION SECTION =================-->
+    <section class="auth-section registration-section" aria-labelledby="regHeading">
+      <div class="container auth-container">
+        
+        <!-- Left Hero Overview -->
+        <div class="auth-hero-pane">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Student Onboarding</span>
+          </div>
+
+          <h1 id="regHeading" class="auth-title">
+            Create Your <span class="gradient-text">StudentHub</span> Account
+          </h1>
+
+          <p class="auth-subtext">
+            Register now to manage your academic profile, access real-time circulars, view course timetables, and sign up for hackathons and workshops.
+          </p>
+
+          <div class="auth-image-card">
+            <img src="../image/image.png" alt="University student onboarding preview" class="auth-hero-img" loading="eager">
+          </div>
+        </div>
+
+        <!-- Right Form Container -->
+        <div class="auth-form-pane">
+          <div class="form-card auth-card reg-form-card">
+            
+            <div class="auth-card-header">
+              <h2>Student Enrollment Form</h2>
+              <p>Enter your university details to create your credentials</p>
+            </div>
+
+            <form class="styled-form" id="registerForm" action="login.html" method="POST">
+              
+              <!-- Row 1: Name & Email -->
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="regFullName" class="form-label">Full Name <span class="required-star">*</span></label>
+                  <div class="input-icon-wrap">
+                    <i class="fa-regular fa-user input-icon" aria-hidden="true"></i>
+                    <input type="text" id="regFullName" name="fullname" class="form-control" placeholder="e.g. Harsh Patel" required autocomplete="name">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="regEmail" class="form-label">University Email <span class="required-star">*</span></label>
+                  <div class="input-icon-wrap">
+                    <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                    <input type="email" id="regEmail" name="email" class="form-control" placeholder="e.g. 24it001@charusat.edu.in" required autocomplete="email">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 2: Phone & Enrollment -->
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="regPhone" class="form-label">Phone Number <span class="required-star">*</span></label>
+                  <div class="input-icon-wrap">
+                    <i class="fa-solid fa-phone input-icon" aria-hidden="true"></i>
+                    <input type="tel" id="regPhone" name="phone" class="form-control" placeholder="e.g. +91 9876543210" required autocomplete="tel">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="regEnrollment" class="form-label">Enrollment Number <span class="required-star">*</span></label>
+                  <div class="input-icon-wrap">
+                    <i class="fa-solid fa-id-card input-icon" aria-hidden="true"></i>
+                    <input type="text" id="regEnrollment" name="enrollment_number" class="form-control" placeholder="e.g. 24IT001" required>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 3: Department & Semester -->
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="regDepartment" class="form-label">Department <span class="required-star">*</span></label>
+                  <div class="input-icon-wrap">
+                    <i class="fa-solid fa-building-columns input-icon" aria-hidden="true"></i>
+                    <select id="regDepartment" name="department" class="form-control" required>
+                      <option value="" disabled selected>Select Department</option>
+                      <option value="Information Technology">Information Technology</option>
+                      <option value="Computer Engineering">Computer Engineering</option>
+                      <option value="Mechanical Engineering">Mechanical Engineering</option>
+                      <option value="Civil Engineering">Civil Engineering</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="regSemester" class="form-label">Semester <span class="required-star">*</span></label>
+                  <div class="input-icon-wrap">
+                    <i class="fa-solid fa-layer-group input-icon" aria-hidden="true"></i>
+                    <select id="regSemester" name="semester" class="form-control" required>
+                      <option value="" disabled selected>Select Semester</option>
+                      <option value="Semester 1">Semester 1</option>
+                      <option value="Semester 2">Semester 2</option>
+                      <option value="Semester 3">Semester 3</option>
+                      <option value="Semester 4">Semester 4</option>
+                      <option value="Semester 5">Semester 5</option>
+                      <option value="Semester 6">Semester 6</option>
+                      <option value="Semester 7">Semester 7</option>
+                      <option value="Semester 8">Semester 8</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 4: Passwords -->
+              <div class="form-group-row">
+                <div class="form-group">
+                  <label for="regPassword" class="form-label">Create Password <span class="required-star">*</span></label>
+                  <div class="input-icon-wrap password-wrap">
+                    <i class="fa-solid fa-lock input-icon" aria-hidden="true"></i>
+                    <input type="password" id="regPassword" name="password" class="form-control password-input" placeholder="Min. 8 characters" required autocomplete="new-password">
+                    <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility" data-target="regPassword">
+                      <i class="fa-regular fa-eye-slash toggle-eye-icon" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="regConfirmPassword" class="form-label">Confirm Password <span class="required-star">*</span></label>
+                  <div class="input-icon-wrap password-wrap">
+                    <i class="fa-solid fa-shield-halved input-icon" aria-hidden="true"></i>
+                    <input type="password" id="regConfirmPassword" name="confirm_password" class="form-control password-input" placeholder="Repeat password" required autocomplete="new-password">
+                    <button type="button" class="password-toggle-btn" aria-label="Toggle confirm password visibility" data-target="regConfirmPassword">
+                      <i class="fa-regular fa-eye-slash toggle-eye-icon" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Complete Registration</span>
+                <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+              </button>
+
+              <!-- Footer Switcher -->
+              <div class="auth-switch-footer">
+                <p>
+                  Already have an account? 
+                  <a href="login.html" class="text-primary-link font-weight-semibold">Sign In</a>
+                </p>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Your unified digital campus portal engineered to simplify academic coordination, announcements, and student participation.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
+
 </html>

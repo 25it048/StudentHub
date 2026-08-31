@@ -1,281 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard | StudentHub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="stylesheet" href="../css/style.css">
+  <title>Student Dashboard — StudentHub</title>
+  <meta name="description" content="Personalized student academic dashboard for tracking attendance, semester CGPA, enrolled courses, and upcoming campus events.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-
-<img src="../image/StudentHub LOGO.png">
-
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="registar.html">Register</a>
-<a href="login.html">Login</a>
-<a href="dashboard.html" class="active">Dashboard</a>
-<a href="events.html">Events</a>
-<a href="profile.html">Profile</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<button class="nav-btn">
-
-Logout
-
-</button>
-
-</header>
-
-<section class="features">
-
-<h2>Student Dashboard</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-user-graduate"></i>
-
-<h3>Welcome Harsh</h3>
-
-<p>
-
-Department : IT
-
-Semester : 3
-
-Enrollment : 24IT001
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-calendar-days"></i>
-
-<h3>Upcoming Events</h3>
-
-<p>
-
-Hackathon
-
-Web Development Workshop
-
-AI Seminar
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-book"></i>
-
-<h3>Subjects</h3>
-
-<p>
-
-Java
-
-DSA
-
-Web Development
-
-Database
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-bell"></i>
-
-<h3>Latest Notices</h3>
-
-<p>
-
-Lab Submission Friday
-
-Assignment Due
-
-Internal Exam
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h3>Attendance</h3>
-
-<p>
-
-Present
-
-92%
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-square-poll-vertical"></i>
-
-<h3>Result</h3>
-
-<p>
-
-CGPA
-
-8.50
-
-Excellent
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="event">
-
-<h2>Quick Actions</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-user"></i>
-
-<h3>Edit Profile</h3>
-
-<button class="primary">
-
-Open
-
-</button>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-calendar-plus"></i>
-
-<h3>Register Event</h3>
-
-<button class="primary">
-
-Apply
-
-</button>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-file-lines"></i>
-
-<h3>Assignments</h3>
-
-<button class="primary">
-
-View
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>
-
-Your Digital Campus Portal
-
-</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-
-<a href="events.html">Events</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-linkedin"></i>
-
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link active" aria-current="page">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-outline btn-sm">Logout</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ DASHBOARD BANNER / WELCOME =================-->
+    <section class="dashboard-banner-section" aria-labelledby="welcomeHeading">
+      <div class="container">
+        
+        <div class="welcome-card">
+          <div class="welcome-user-info">
+            <div class="user-avatar-badge">
+              <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+            </div>
+            <div>
+              <span class="badge-pill">Academic Year 2026</span>
+              <h1 id="welcomeHeading" class="welcome-title">Welcome back, Harsh!</h1>
+              <p class="welcome-subtext">
+                Department of Information Technology • Semester 3 • Enrollment ID: <strong>24IT001</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="welcome-metrics">
+            <div class="metric-pill">
+              <span class="metric-label">Attendance</span>
+              <span class="metric-val text-success">92%</span>
+            </div>
+            <div class="metric-pill">
+              <span class="metric-label">Current CGPA</span>
+              <span class="metric-val text-primary">8.50</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ MAIN DASHBOARD METRICS & WIDGETS =================-->
+    <section class="dashboard-grid-section" aria-labelledby="dashboardOverviewTitle">
+      <div class="container">
+        
+        <h2 id="dashboardOverviewTitle" class="sr-only">Student Academic Overview</h2>
+
+        <div class="dashboard-widget-grid">
+
+          <!-- Widget 1: Academic Performance -->
+          <div class="dashboard-card stat-summary-card">
+            <div class="card-header-clean">
+              <div class="header-icon-box icon-purple">
+                <i class="fa-solid fa-square-poll-vertical" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Academic Performance</h3>
+                <span class="card-sub">Semester 2 Evaluation</span>
+              </div>
+            </div>
+            <div class="card-metric-display">
+              <div class="metric-number-wrap">
+                <span class="metric-huge">8.50</span>
+                <span class="metric-rating-tag status-active">Excellent</span>
+              </div>
+              <p class="metric-note">Ranked in top 5% of Information Technology department.</p>
+            </div>
+          </div>
+
+          <!-- Widget 2: Attendance Monitor -->
+          <div class="dashboard-card stat-summary-card">
+            <div class="card-header-clean">
+              <div class="header-icon-box icon-emerald">
+                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Overall Attendance</h3>
+                <span class="card-sub">Required Threshold: 75%</span>
+              </div>
+            </div>
+            <div class="card-metric-display">
+              <div class="metric-number-wrap">
+                <span class="metric-huge text-success">92%</span>
+                <span class="metric-rating-tag status-active">Regular</span>
+              </div>
+              <div class="progress-bar-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Attendance 92%">
+                <div class="progress-bar-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Widget 3: Active Subjects -->
+          <div class="dashboard-card">
+            <div class="card-header-clean">
+              <div class="header-icon-box icon-blue">
+                <i class="fa-solid fa-book" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Enrolled Courses</h3>
+                <span class="card-sub">4 Core Modules</span>
+              </div>
+            </div>
+            <ul class="widget-item-list">
+              <li class="widget-list-row">
+                <span class="item-title">Java Programming</span>
+                <span class="item-code">IT301</span>
+              </li>
+              <li class="widget-list-row">
+                <span class="item-title">Data Structures & Algorithms</span>
+                <span class="item-code">IT302</span>
+              </li>
+              <li class="widget-list-row">
+                <span class="item-title">Full-Stack Web Development</span>
+                <span class="item-code">IT303</span>
+              </li>
+              <li class="widget-list-row">
+                <span class="item-title">Database Management Systems</span>
+                <span class="item-code">IT304</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Widget 4: Latest Notices -->
+          <div class="dashboard-card">
+            <div class="card-header-clean">
+              <div class="header-icon-box icon-amber">
+                <i class="fa-solid fa-bell" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Recent Circulars</h3>
+                <span class="card-sub">Verified Alerts</span>
+              </div>
+            </div>
+            <ul class="widget-item-list">
+              <li class="widget-list-row">
+                <div class="notice-bullet priority-dot"></div>
+                <div class="notice-row-body">
+                  <span class="item-title">Lab Submission on Friday</span>
+                  <span class="item-meta">DBMS Lab 204 • 05:00 PM</span>
+                </div>
+              </li>
+              <li class="widget-list-row">
+                <div class="notice-bullet"></div>
+                <div class="notice-row-body">
+                  <span class="item-title">DSA Assignment Due</span>
+                  <span class="item-meta">Submit to Faculty Portal</span>
+                </div>
+              </li>
+              <li class="widget-list-row">
+                <div class="notice-bullet"></div>
+                <div class="notice-row-body">
+                  <span class="item-title">Internal Mid-Sem Schedule</span>
+                  <span class="item-meta">Starts Next Month</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Widget 5: Upcoming Events -->
+          <div class="dashboard-card">
+            <div class="card-header-clean">
+              <div class="header-icon-box icon-cyan">
+                <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Upcoming Events</h3>
+                <span class="card-sub">RSVP Confirmed</span>
+              </div>
+            </div>
+            <ul class="widget-item-list">
+              <li class="widget-list-row">
+                <span class="event-cal-tag">AUG 22</span>
+                <div class="notice-row-body">
+                  <span class="item-title">Campus Hackathon 2026</span>
+                  <span class="item-meta">Central Auditorium</span>
+                </div>
+              </li>
+              <li class="widget-list-row">
+                <span class="event-cal-tag">AUG 15</span>
+                <div class="notice-row-body">
+                  <span class="item-title">Web Development Workshop</span>
+                  <span class="item-meta">Lab 302</span>
+                </div>
+              </li>
+              <li class="widget-list-row">
+                <span class="event-cal-tag">AUG 30</span>
+                <div class="notice-row-body">
+                  <span class="item-title">Applied AI Seminar</span>
+                  <span class="item-meta">Seminar Hall B</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Widget 6: Quick Action Cards -->
+          <div class="dashboard-card action-hub-card">
+            <div class="card-header-clean">
+              <div class="header-icon-box icon-rose">
+                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>Student Utilities</h3>
+                <span class="card-sub">Quick Operations</span>
+              </div>
+            </div>
+            <div class="dashboard-action-buttons">
+              <a href="profile.html" class="btn btn-outline btn-block text-left">
+                <i class="fa-solid fa-user-pen" aria-hidden="true"></i>
+                <span>Edit Profile</span>
+              </a>
+              <a href="events.html" class="btn btn-outline btn-block text-left">
+                <i class="fa-solid fa-calendar-plus" aria-hidden="true"></i>
+                <span>Register for Events</span>
+              </a>
+              <a href="dashboard.html" class="btn btn-outline btn-block text-left">
+                <i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i>
+                <span>View Assignments</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Your unified digital campus portal engineered to simplify academic coordination, announcements, and student participation.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
+
 </html>

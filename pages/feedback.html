@@ -1,219 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Feedback — StudentHub</title>
+  <meta name="description" content="Share your suggestions, review your campus portal experience, and help us improve StudentHub services.">
 
-<title>Feedback | StudentHub</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="../css/style.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-
-<img src="../image/StudentHub LOGO.png">
-
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="registar.html">Register</a>
-<a href="login.html">Login</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="events.html">Events</a>
-<a href="profile.html">Profile</a>
-<a href="contact.html">Contact</a>
-<a href="faq.html">FAQ</a>
-<a href="feedback.html" class="active">Feedback</a>
-
-</nav>
-
-<button class="nav-btn">
-
-Feedback
-
-</button>
-
-</header>
-
-<section class="features">
-
-<h2>We Value Your Feedback</h2>
-
-<div class="form-container">
-
-<form>
-
-<div class="input-box">
-
-<label>Full Name</label>
-
-<input type="text" placeholder="Enter your Name">
-
-</div>
-
-<div class="input-box">
-
-<label>Email</label>
-
-<input type="email" placeholder="Enter your Email">
-
-</div>
-
-<div class="input-box">
-
-<label>Rate Your Experience</label>
-
-<div class="rating">
-
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-
-</div>
-
-</div>
-
-<div class="input-box">
-
-<label>Your Feedback</label>
-
-<textarea rows="6" placeholder="Write your valuable feedback..."></textarea>
-
-</div>
-
-<button class="primary">
-
-Submit Feedback
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<section class="features">
-
-<h2>Why Your Feedback Matters</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-comments"></i>
-
-<h3>Improve Services</h3>
-
-<p>
-
-Your suggestions help us improve StudentHub.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-users"></i>
-
-<h3>Student Satisfaction</h3>
-
-<p>
-
-We value every student's opinion.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-lightbulb"></i>
-
-<h3>New Ideas</h3>
-
-<p>
-
-Your ideas inspire new features and improvements.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>Your Digital Campus Portal</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-<a href="contact.html">Contact</a>
-<a href="faq.html">FAQ</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-<i class="fab fa-instagram"></i>
-<i class="fab fa-linkedin"></i>
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link active" aria-current="page">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-ghost">Login</a>
+        <a href="registar.html" class="btn btn-primary">Join Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ FEEDBACK FORM SECTION =================-->
+    <section class="feedback-hero-section" aria-labelledby="feedbackHeaderTitle">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Student Voice</span>
+          <h1 id="feedbackHeaderTitle" class="section-title">We Value Your Feedback</h1>
+          <p class="section-description">
+            Your observations directly influence portal optimizations, feature additions, and campus event coordination.
+          </p>
+        </div>
+
+        <div class="form-wrapper-center">
+          <div class="form-card feedback-form-card">
+            
+            <form class="styled-form" action="#" method="POST" onsubmit="return false;">
+              
+              <div class="form-group">
+                <label for="feedbackName" class="form-label">Full Name <span class="required-star">*</span></label>
+                <div class="input-icon-wrap">
+                  <i class="fa-regular fa-user input-icon" aria-hidden="true"></i>
+                  <input type="text" id="feedbackName" name="name" class="form-control" placeholder="e.g. Harsh Patel" required autocomplete="name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="feedbackEmail" class="form-label">University Email <span class="required-star">*</span></label>
+                <div class="input-icon-wrap">
+                  <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                  <input type="email" id="feedbackEmail" name="email" class="form-control" placeholder="e.g. 24it001@charusat.edu.in" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" id="ratingLabel">Rate Your Experience <span class="required-star">*</span></label>
+                <div class="interactive-star-rating" role="radiogroup" aria-labelledby="ratingLabel">
+                  <button type="button" class="star-rating-btn" data-value="1" aria-label="1 star"><i class="fa-solid fa-star"></i></button>
+                  <button type="button" class="star-rating-btn" data-value="2" aria-label="2 stars"><i class="fa-solid fa-star"></i></button>
+                  <button type="button" class="star-rating-btn" data-value="3" aria-label="3 stars"><i class="fa-solid fa-star"></i></button>
+                  <button type="button" class="star-rating-btn" data-value="4" aria-label="4 stars"><i class="fa-solid fa-star"></i></button>
+                  <button type="button" class="star-rating-btn active" data-value="5" aria-label="5 stars"><i class="fa-solid fa-star"></i></button>
+                </div>
+                <input type="hidden" name="rating" id="ratingValueInput" value="5">
+              </div>
+
+              <div class="form-group">
+                <label for="feedbackComments" class="form-label">Your Feedback & Suggestions <span class="required-star">*</span></label>
+                <textarea id="feedbackComments" name="feedback" class="form-control textarea-control" rows="5" placeholder="Share details about what worked well or what can be improved..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Submit Feedback</span>
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ WHY FEEDBACK MATTERS =================-->
+    <section class="features-section" aria-labelledby="feedbackPillarsTitle">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Impact</span>
+          <h2 id="feedbackPillarsTitle" class="section-title">Why Your Feedback Matters</h2>
+          <p class="section-description">
+            Continuous student feedback enables the administration to adapt and refine digital resources efficiently.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
+            <h3>Improve Digital Services</h3>
+            <p>Direct bug reports and usability suggestions ensure rapid interface patches and smoother workflows.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+            <h3>Student-First Priorities</h3>
+            <p>Every response is aggregated into administrative reviews to prioritize campus service enhancements.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+            <h3>Innovation & New Ideas</h3>
+            <p>Student feature suggestions directly inspire new event formats, dashboard widgets, and platform tools.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Your unified digital campus portal engineered to simplify academic coordination, announcements, and student participation.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
+
 </html>

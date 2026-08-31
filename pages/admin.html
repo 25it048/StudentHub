@@ -1,328 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel — StudentHub</title>
+  <meta name="description" content="Administrative control center for managing student records, campus events, and university feedback on StudentHub.">
 
-<title>Admin Panel | StudentHub</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="../css/style.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-
-<img src="../image/StudentHub LOGO.png">
-
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="events.html">Events</a>
-<a href="profile.html">Profile</a>
-<a href="contact.html">Contact</a>
-<a href="admin.html" class="active">Admin</a>
-
-</nav>
-
-<button class="nav-btn">
-
-Logout
-
-</button>
-
-</header>
-
-<section class="features">
-
-<h2>Admin Dashboard</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-user-graduate"></i>
-
-<h3>Total Students</h3>
-
-<h1>512</h1>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-calendar-days"></i>
-
-<h3>Total Events</h3>
-
-<h1>18</h1>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-chalkboard-user"></i>
-
-<h3>Faculty</h3>
-
-<h1>42</h1>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-comments"></i>
-
-<h3>Feedback</h3>
-
-<h1>136</h1>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="features">
-
-<h2>Recent Student Registrations</h2>
-
-<div class="table-container">
-
-<table>
-
-<tr>
-
-<th>ID</th>
-
-<th>Name</th>
-
-<th>Department</th>
-
-<th>Semester</th>
-
-<th>Status</th>
-
-</tr>
-
-<tr>
-
-<td>101</td>
-
-<td>Harsh Patel</td>
-
-<td>IT</td>
-
-<td>3</td>
-
-<td>Active</td>
-
-</tr>
-
-<tr>
-
-<td>102</td>
-
-<td>Rahul Shah</td>
-
-<td>CE</td>
-
-<td>5</td>
-
-<td>Active</td>
-
-</tr>
-
-<tr>
-
-<td>103</td>
-
-<td>Priya Patel</td>
-
-<td>IT</td>
-
-<td>1</td>
-
-<td>Pending</td>
-
-</tr>
-
-<tr>
-
-<td>104</td>
-
-<td>Meet Joshi</td>
-
-<td>ME</td>
-
-<td>7</td>
-
-<td>Active</td>
-
-</tr>
-
-<tr>
-
-<td>105</td>
-
-<td>Krisha Mehta</td>
-
-<td>CE</td>
-
-<td>3</td>
-
-<td>Inactive</td>
-
-</tr>
-
-</table>
-
-</div>
-
-</section>
-
-<section class="features">
-
-<h2>Admin Actions</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-user-plus"></i>
-
-<h3>Add Student</h3>
-
-<button class="primary">
-
-Open
-
-</button>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-calendar-plus"></i>
-
-<h3>Add Event</h3>
-
-<button class="primary">
-
-Open
-
-</button>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-trash"></i>
-
-<h3>Delete Record</h3>
-
-<button class="primary">
-
-Manage
-
-</button>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-gear"></i>
-
-<h3>Settings</h3>
-
-<button class="primary">
-
-Open
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>
-
-Digital Campus Portal
-
-</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-
-<a href="dashboard.html">Dashboard</a>
-
-<a href="events.html">Events</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-linkedin"></i>
-
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span> <small class="admin-badge">Admin</small></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link active" aria-current="page">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-outline btn-sm">Logout</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ PAGE TITLE & STATS =================-->
+    <section class="admin-header-section" aria-labelledby="adminHeaderTitle">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Management Console</span>
+          <h1 id="adminHeaderTitle" class="section-title">Institutional Overview</h1>
+          <p class="section-description">
+            Monitor real-time enrollment metrics, event registrations, and campus communications.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i></div>
+            <div class="stat-content">
+              <h2 class="stat-number">512</h2>
+              <p class="stat-label">Total Students</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></div>
+            <div class="stat-content">
+              <h2 class="stat-number">18</h2>
+              <p class="stat-label">Active Events</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></div>
+            <div class="stat-content">
+              <h2 class="stat-number">42</h2>
+              <p class="stat-label">Faculty Members</p>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrap"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+            <div class="stat-content">
+              <h2 class="stat-number">136</h2>
+              <p class="stat-label">Total Feedbacks</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ RECENT REGISTRATIONS TABLE =================-->
+    <section class="admin-table-section" aria-labelledby="recentRegistrationsTitle">
+      <div class="container">
+        
+        <div class="section-header-flex">
+          <div>
+            <span class="section-subtitle">Student Directory</span>
+            <h2 id="recentRegistrationsTitle" class="section-title">Recent Student Registrations</h2>
+          </div>
+          <div class="table-actions">
+            <input type="search" class="form-control form-control-sm" placeholder="Filter by name or ID..." aria-label="Search student registrations">
+          </div>
+        </div>
+
+        <div class="table-card">
+          <div class="table-responsive">
+            <table class="data-table" role="table">
+              <thead>
+                <tr>
+                  <th scope="col">Student ID</th>
+                  <th scope="col">Full Name</th>
+                  <th scope="col">Department</th>
+                  <th scope="col">Semester</th>
+                  <th scope="col">Account Status</th>
+                  <th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>#101</strong></td>
+                  <td>Harsh Patel</td>
+                  <td><span class="dept-badge">IT</span></td>
+                  <td>Semester 3</td>
+                  <td><span class="status-badge status-active">Active</span></td>
+                  <td><button class="btn btn-ghost btn-sm" type="button" aria-label="Edit Harsh Patel">Edit</button></td>
+                </tr>
+                <tr>
+                  <td><strong>#102</strong></td>
+                  <td>Rahul Shah</td>
+                  <td><span class="dept-badge">CE</span></td>
+                  <td>Semester 5</td>
+                  <td><span class="status-badge status-active">Active</span></td>
+                  <td><button class="btn btn-ghost btn-sm" type="button" aria-label="Edit Rahul Shah">Edit</button></td>
+                </tr>
+                <tr>
+                  <td><strong>#103</strong></td>
+                  <td>Priya Patel</td>
+                  <td><span class="dept-badge">IT</span></td>
+                  <td>Semester 1</td>
+                  <td><span class="status-badge status-pending">Pending</span></td>
+                  <td><button class="btn btn-ghost btn-sm" type="button" aria-label="Edit Priya Patel">Edit</button></td>
+                </tr>
+                <tr>
+                  <td><strong>#104</strong></td>
+                  <td>Meet Joshi</td>
+                  <td><span class="dept-badge">ME</span></td>
+                  <td>Semester 7</td>
+                  <td><span class="status-badge status-active">Active</span></td>
+                  <td><button class="btn btn-ghost btn-sm" type="button" aria-label="Edit Meet Joshi">Edit</button></td>
+                </tr>
+                <tr>
+                  <td><strong>#105</strong></td>
+                  <td>Krisha Mehta</td>
+                  <td><span class="dept-badge">CE</span></td>
+                  <td>Semester 3</td>
+                  <td><span class="status-badge status-inactive">Inactive</span></td>
+                  <td><button class="btn btn-ghost btn-sm" type="button" aria-label="Edit Krisha Mehta">Edit</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ ADMIN ACTIONS =================-->
+    <section class="admin-actions-section" aria-labelledby="adminActionsTitle">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-subtitle">Quick Control</span>
+          <h2 id="adminActionsTitle" class="section-title">Administrative Operations</h2>
+          <p class="section-description">
+            Direct shortcuts for roster management, event orchestration, and system configurations.
+          </p>
+        </div>
+
+        <div class="features-grid admin-actions-grid">
+          
+          <div class="feature-card admin-action-card">
+            <div class="feature-icon"><i class="fa-solid fa-user-plus" aria-hidden="true"></i></div>
+            <h3>Add Student</h3>
+            <p>Manually provision a student profile, assign roll numbers, and grant portal credentials.</p>
+            <button class="btn btn-primary btn-sm" type="button">Open Panel</button>
+          </div>
+
+          <div class="feature-card admin-action-card">
+            <div class="feature-icon"><i class="fa-solid fa-calendar-plus" aria-hidden="true"></i></div>
+            <h3>Create Event</h3>
+            <p>Publish workshops, hackathons, and guest lectures to the university discovery calendar.</p>
+            <button class="btn btn-primary btn-sm" type="button">Open Builder</button>
+          </div>
+
+          <div class="feature-card admin-action-card">
+            <div class="feature-icon"><i class="fa-solid fa-trash-can" aria-hidden="true"></i></div>
+            <h3>Delete Records</h3>
+            <p>Archive or delete graduated alumni data, unverified entries, and outdated event logs.</p>
+            <button class="btn btn-outline btn-sm text-danger" type="button">Manage Records</button>
+          </div>
+
+          <div class="feature-card admin-action-card">
+            <div class="feature-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+            <h3>System Settings</h3>
+            <p>Configure semester dates, portal maintenance mode, and authentication parameters.</p>
+            <button class="btn btn-primary btn-sm" type="button">Configure</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Secure administrative and student management ecosystem for higher education campuses.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Administration Links -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Administration</h3>
+          <ul class="footer-links">
+            <li><a href="admin.html">Admin Dashboard</a></li>
+            <li><a href="profile.html">Academic Records</a></li>
+            <li><a href="feedback.html">Feedback Logs</a></li>
+            <li><a href="contact.html">Campus Directory</a></li>
+            <li><a href="login.html">Switch Session</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">System Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

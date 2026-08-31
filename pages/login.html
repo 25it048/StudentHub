@@ -1,200 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | StudentHub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="../css/style.css">
+  <title>Student Login — StudentHub</title>
+  <meta name="description" content="Access your personalized StudentHub portal to manage academic records, attendance, event RSVPs, and campus circulars.">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-<img src="../image/StudentHub LOGO.png">
-<h2>StudentHub</h2>
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="registar.html">Register</a>
-<a href="login.html" class="active">Login</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="events.html">Events</a>
-<a href="profile.html">Profile</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<button class="nav-btn">Join Now</button>
-
-</header>
-
-<section class="hero">
-
-<div class="left">
-
-<span class="tag">
-
-Student Login
-
-</span>
-
-<h1>
-
-Welcome Back
-
-</h1>
-
-<p>
-
-Login to access your dashboard, academic profile,
-events and latest college notices.
-
-</p>
-
-</div>
-
-<div class="right">
-
-<img src="../image/image.png">
-
-</div>
-
-</section>
-
-<section class="features">
-
-<h2>Login to StudentHub</h2>
-
-<div class="form-container">
-
-<form>
-
-<div class="input-box">
-
-<label>Email Address</label>
-
-<input type="email" placeholder="Enter your Email">
-
-</div>
-
-<div class="input-box">
-
-<label>Password</label>
-
-<input type="password" placeholder="Enter Password">
-
-</div>
-
-<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
-
-<label>
-
-<input type="checkbox">
-
-Remember Me
-
-</label>
-
-<a href="#" style="text-decoration:none;color:#2563eb;">
-
-Forgot Password?
-
-</a>
-
-</div>
-
-<button class="primary">
-
-Login
-
-</button>
-
-<p style="text-align:center;margin-top:20px;">
-
-Don't have an account?
-
-<a href="registar.html" style="color:#2563eb;text-decoration:none;">
-
-Register
-
-</a>
-
-</p>
-
-</form>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>Your Digital Campus Portal</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-
-<a href="about.html">About</a>
-
-<a href="events.html">Events</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-linkedin"></i>
-
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-ghost active" aria-current="page">Login</a>
+        <a href="registar.html" class="btn btn-primary">Join Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ LOGIN SECTION =================-->
+    <section class="auth-section" aria-labelledby="loginHeading">
+      <div class="container auth-container">
+        
+        <!-- Left Hero Overview -->
+        <div class="auth-hero-pane">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Student Portal Gateway</span>
+          </div>
+
+          <h1 id="loginHeading" class="auth-title">
+            Welcome Back to <span class="gradient-text">StudentHub</span>
+          </h1>
+
+          <p class="auth-subtext">
+            Authenticate to access your unified academic overview, live attendance logs, event registries, and priority circulars.
+          </p>
+
+          <div class="auth-image-card">
+            <img src="../image/image.png" alt="University student authentication and workspace" class="auth-hero-img" loading="eager">
+          </div>
+        </div>
+
+        <!-- Right Form Container -->
+        <div class="auth-form-pane">
+          <div class="form-card auth-card">
+            
+            <div class="auth-card-header">
+              <h2>Account Sign In</h2>
+              <p>Enter your university credentials to continue</p>
+            </div>
+
+            <form class="styled-form" id="loginForm" action="dashboard.html" method="POST">
+              
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="loginEmail" class="form-label">University Email <span class="required-star">*</span></label>
+                <div class="input-icon-wrap">
+                  <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                  <input type="email" id="loginEmail" name="email" class="form-control" placeholder="e.g. 24it001@charusat.edu.in" required autocomplete="email">
+                </div>
+              </div>
+
+              <!-- Password Input with Toggle -->
+              <div class="form-group">
+                <label for="loginPassword" class="form-label">Password <span class="required-star">*</span></label>
+                <div class="input-icon-wrap password-wrap">
+                  <i class="fa-solid fa-lock input-icon" aria-hidden="true"></i>
+                  <input type="password" id="loginPassword" name="password" class="form-control password-input" placeholder="Enter your password" required autocomplete="current-password">
+                  <button type="button" class="password-toggle-btn" aria-label="Toggle password visibility" data-target="loginPassword">
+                    <i class="fa-regular fa-eye-slash toggle-eye-icon" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Options Row -->
+              <div class="auth-options-row">
+                <label class="checkbox-container">
+                  <input type="checkbox" name="remember_me" id="rememberMeCheckbox">
+                  <span class="custom-checkbox"></span>
+                  <span class="checkbox-label-text">Remember me</span>
+                </label>
+
+                <a href="faq.html" class="forgot-link">Forgot password?</a>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Sign In to Dashboard</span>
+                <i class="fa-solid fa-arrow-right-to-bracket" aria-hidden="true"></i>
+              </button>
+
+              <!-- Footer Switcher -->
+              <div class="auth-switch-footer">
+                <p>
+                  Don't have an account yet? 
+                  <a href="registar.html" class="text-primary-link font-weight-semibold">Register here</a>
+                </p>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Your unified digital campus portal engineered to simplify academic coordination, announcements, and student participation.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
+
 </html>

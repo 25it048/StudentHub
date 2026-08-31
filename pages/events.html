@@ -1,259 +1,345 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Events — StudentHub</title>
+  <meta name="description" content="Discover upcoming college workshops, hackathons, seminars, sports meets, and cultural fests on the StudentHub event discovery hub.">
 
-<title>Events | StudentHub</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="../css/style.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-
-<img src="../image/StudentHub LOGO.png">
-
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="registar.html">Register</a>
-<a href="login.html">Login</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="events.html" class="active">Events</a>
-<a href="profile.html">Profile</a>
-<a href="contact.html">Contact</a>
-
-</nav>
-
-<button class="nav-btn">Join Now</button>
-
-</header>
-
-<section class="features">
-
-<h2>Upcoming College Events</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="../image/hackathon.jpg" class="event-img">
-
-<h3>Hackathon 2026</h3>
-
-<p>
-
-📅 20 August 2026
-
-<br><br>
-
-Build innovative projects in 24 hours.
-
-</p>
-
-<button class="primary">
-
-Register
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="../image/workshop.jpg" class="event-img">
-
-<h3>Web Development Workshop</h3>
-
-<p>
-
-📅 25 August 2026
-
-<br><br>
-
-Learn HTML, CSS & JavaScript from experts.
-
-</p>
-
-<button class="primary">
-
-Register
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="../image/seminar.jpg" class="event-img">
-
-<h3>AI Seminar</h3>
-
-<p>
-
-📅 28 August 2026
-
-<br><br>
-
-Explore Artificial Intelligence & Machine Learning.
-
-</p>
-
-<button class="primary">
-
-Register
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="../image/coding.jpg" class="event-img">
-
-<h3>Coding Contest</h3>
-
-<p>
-
-📅 2 September 2026
-
-<br><br>
-
-Compete with top programmers.
-
-</p>
-
-<button class="primary">
-
-Participate
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="../image/sports.jpg" class="event-img">
-
-<h3>Sports Day</h3>
-
-<p>
-
-📅 10 September 2026
-
-<br><br>
-
-Football, Cricket, Volleyball & Athletics.
-
-</p>
-
-<button class="primary">
-
-Join
-
-</button>
-
-</div>
-
-<div class="card">
-
-<img src="../image/cultural.jpg" class="event-img">
-
-<h3>Cultural Fest</h3>
-
-<p>
-
-📅 18 September 2026
-
-<br><br>
-
-Dance, Music, Drama and Fun Activities.
-
-</p>
-
-<button class="primary">
-
-Register
-
-</button>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>Your Digital Campus Portal</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-
-<a href="dashboard.html">Dashboard</a>
-
-<a href="contact.html">Contact</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-instagram"></i>
-
-<i class="fab fa-linkedin"></i>
-
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link active" aria-current="page">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-ghost">Login</a>
+        <a href="registar.html" class="btn btn-primary">Join Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ PAGE HEADER & FILTERS =================-->
+    <section class="events-hero-section" aria-labelledby="eventsPageTitle">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Campus Calendar & Discovery</span>
+          <h1 id="eventsPageTitle" class="section-title">Explore Upcoming Campus Events</h1>
+          <p class="section-description">
+            Participate in university competitions, build your portfolio in workshops, and engage with campus culture.
+          </p>
+        </div>
+
+        <!-- Filter and Search Bar -->
+        <div class="filter-search-container">
+          <div class="search-input-wrap">
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input type="search" id="eventSearchInput" class="form-control" placeholder="Search events by title, keyword, or venue..." aria-label="Search events">
+          </div>
+
+          <div class="category-pills-wrap" role="group" aria-label="Event category filter">
+            <button type="button" class="filter-pill active" data-category="all">All Events</button>
+            <button type="button" class="filter-pill" data-category="tech">Technology</button>
+            <button type="button" class="filter-pill" data-category="workshop">Workshops</button>
+            <button type="button" class="filter-pill" data-category="sports">Sports</button>
+            <button type="button" class="filter-pill" data-category="cultural">Cultural</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ EVENTS GRID =================-->
+    <section class="events-catalog-section" aria-label="Events Catalog">
+      <div class="container">
+        
+        <div class="events-grid">
+
+          <!-- Event 1: Hackathon 2026 -->
+          <article class="event-card" data-category="tech">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/hackathon.jpg" alt="Hackathon 2026 event poster" class="event-thumb" loading="lazy" onerror="this.src='../image/hackthon.jpg';">
+              <span class="event-badge badge-primary">Competition</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-08-20">20 August 2026</time>
+              </div>
+              <h2 class="event-heading">Hackathon 2026</h2>
+              <p class="event-snippet">
+                36-hour sprint: Build innovative solutions, work with cross-functional teams, and compete for institutional grants.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Central Lab</span>
+                <a href="registar.html" class="btn btn-primary btn-sm">Register</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 2: Web Development Workshop -->
+          <article class="event-card" data-category="workshop">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/workshop.jpg" alt="Web Development workshop banner" class="event-thumb" loading="lazy">
+              <span class="event-badge badge-secondary">Workshop</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-08-25">25 August 2026</time>
+              </div>
+              <h2 class="event-heading">Web Development Workshop</h2>
+              <p class="event-snippet">
+                Master modern HTML5, scalable CSS layouts, JavaScript logic, and real-time backend integrations from industry experts.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Lab 302</span>
+                <a href="registar.html" class="btn btn-primary btn-sm">Register</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 3: AI Seminar -->
+          <article class="event-card" data-category="tech">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/seminar.jpg" alt="AI Seminar speaker announcement" class="event-thumb" loading="lazy" onerror="this.src='../image/ai.jpg';">
+              <span class="event-badge badge-accent">Seminar</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-08-28">28 August 2026</time>
+              </div>
+              <h2 class="event-heading">Applied AI Seminar</h2>
+              <p class="event-snippet">
+                Explore Machine Learning models, natural language architectures, and career pathways in contemporary AI domains.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Hall B</span>
+                <a href="registar.html" class="btn btn-primary btn-sm">Register</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 4: Coding Contest -->
+          <article class="event-card" data-category="tech">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/coding.jpg" alt="Competitive Coding Contest banner" class="event-thumb" loading="lazy">
+              <span class="event-badge badge-primary">Contest</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-09-02">02 September 2026</time>
+              </div>
+              <h2 class="event-heading">Inter-Dept Coding Contest</h2>
+              <p class="event-snippet">
+                Solve algorithmic puzzles, optimize data structure solutions, and climb the university live coding leaderboard.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> IT Cluster 1</span>
+                <a href="registar.html" class="btn btn-primary btn-sm">Participate</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 5: Sports Day -->
+          <article class="event-card" data-category="sports">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/sports.jpg" alt="Annual Campus Sports Day banner" class="event-thumb" loading="lazy">
+              <span class="event-badge badge-success">Athletics</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-09-10">10 September 2026</time>
+              </div>
+              <h2 class="event-heading">Annual Sports Championship</h2>
+              <p class="event-snippet">
+                Compete across inter-college Football tournaments, Cricket league fixtures, Volleyball series, and track athletics.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Main Ground</span>
+                <a href="registar.html" class="btn btn-primary btn-sm">Join</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event 6: Cultural Fest -->
+          <article class="event-card" data-category="cultural">
+            <div class="event-thumbnail-wrap">
+              <img src="../image/cultural.jpg" alt="Annual Cultural Fest celebration" class="event-thumb" loading="lazy">
+              <span class="event-badge badge-warning">Festival</span>
+            </div>
+            <div class="event-body">
+              <div class="event-date">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <time datetime="2026-09-18">18 September 2026</time>
+              </div>
+              <h2 class="event-heading">Vibrant Campus Cultural Fest</h2>
+              <p class="event-snippet">
+                Experience music performances, classical and street dance showcases, theatrical acts, and vibrant campus festivities.
+              </p>
+              <div class="event-footer">
+                <span class="event-venue"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Open Auditorium</span>
+                <a href="registar.html" class="btn btn-primary btn-sm">Register</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Your unified digital campus portal engineered to simplify academic coordination, announcements, and student participation.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
+
 </html>

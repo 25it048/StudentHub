@@ -1,164 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions — StudentHub</title>
+  <meta name="description" content="Find quick answers to common questions about StudentHub account creation, event registrations, dashboard access, and privacy.">
 
-<title>FAQ | StudentHub</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="../css/style.css">
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-<header>
-
-<div class="logo">
-
-<img src="../image/StudentHub LOGO.png">
-
-<h2>StudentHub</h2>
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="registar.html">Register</a>
-<a href="login.html">Login</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="events.html">Events</a>
-<a href="profile.html">Profile</a>
-<a href="contact.html">Contact</a>
-<a href="faq.html" class="active">FAQ</a>
-
-</nav>
-
-<button class="nav-btn">
-
-Help
-
-</button>
-
-</header>
-
-<section class="features">
-
-<h2>Frequently Asked Questions</h2>
-
-<div class="faq-container">
-
-<div class="faq">
-
-<h3>How do I register on StudentHub?</h3>
-
-<p>Create an account using the Register page by entering your personal and academic details.</p>
-
-</div>
-
-<div class="faq">
-
-<h3>Can I update my profile later?</h3>
-
-<p>Yes. You can edit your profile anytime from the Profile section.</p>
-
-</div>
-
-<div class="faq">
-
-<h3>How can I register for college events?</h3>
-
-<p>Open the Events page and click the Register button for your preferred event.</p>
-
-</div>
-
-<div class="faq">
-
-<h3>Is my data secure?</h3>
-
-<p>Yes. StudentHub stores student information securely.</p>
-
-</div>
-
-<div class="faq">
-
-<h3>Who can access the dashboard?</h3>
-
-<p>Only registered students with valid login credentials can access the dashboard.</p>
-
-</div>
-
-<div class="faq">
-
-<h3>How do I contact the administrator?</h3>
-
-<p>Visit the Contact page and submit the contact form.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-content">
-
-<div>
-
-<h3>StudentHub</h3>
-
-<p>Your Digital Campus Portal</p>
-
-</div>
-
-<div>
-
-<h3>Quick Links</h3>
-
-<a href="index.html">Home</a>
-<a href="contact.html">Contact</a>
-<a href="events.html">Events</a>
-
-</div>
-
-<div>
-
-<h3>Follow Us</h3>
-
-<div class="social">
-
-<i class="fab fa-facebook"></i>
-<i class="fab fa-instagram"></i>
-<i class="fab fa-linkedin"></i>
-<i class="fab fa-github"></i>
-
-</div>
-
-</div>
-
-</div>
-
-<hr>
-
-<p class="copy">
-
-© 2026 StudentHub. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="../js/script.js"></script>
-
+  <!--================ HEADER / NAVBAR =================-->
+  <header class="site-header" id="topHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="StudentHub Home">
+        <div class="logo-icon">
+          <img src="../image/StudentHub LOGO.png" alt="StudentHub Logo" class="brand-img-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+          <i class="fa-solid fa-graduation-cap" aria-hidden="true" style="display: none;"></i>
+        </div>
+        <span class="logo-text">Student<span>Hub</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="events.html" class="nav-link">Events</a></li>
+          <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+          <li><a href="profile.html" class="nav-link">Profile</a></li>
+          <li><a href="faq.html" class="nav-link active" aria-current="page">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Group -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="theme-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun light-icon" aria-hidden="true"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-ghost">Login</a>
+        <a href="registar.html" class="btn btn-primary">Join Now</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!--================ PAGE HERO / HEADER =================-->
+    <section class="faq-hero-section" aria-labelledby="faqHeaderTitle">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle">Help & Support Desk</span>
+          <h1 id="faqHeaderTitle" class="section-title">Frequently Asked Questions</h1>
+          <p class="section-description">
+            Need guidance navigating StudentHub? Here are clear answers regarding account setup, security, and portal services.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!--================ ACCORDION FAQ SECTION =================-->
+    <section class="faq-accordion-section" aria-label="Questions and Answers">
+      <div class="container">
+        <div class="faq-accordion-container">
+
+          <!-- FAQ Item 1 -->
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-header" type="button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-btn-1">
+              <span class="faq-question-text">How do I register on StudentHub?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div id="faq-answer-1" class="faq-accordion-body" role="region" aria-labelledby="faq-btn-1" hidden>
+              <p>
+                Navigate to the <a href="registar.html" class="text-primary-link">Register Page</a>, provide your official full name, university enrollment ID, verified college email address, and select your department. Once submitted, your profile will be created immediately.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-header" type="button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-2">
+              <span class="faq-question-text">Can I update my academic and contact profile later?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div id="faq-answer-2" class="faq-accordion-body" role="region" aria-labelledby="faq-btn-2" hidden>
+              <p>
+                Yes. You can edit personal contact numbers, update secondary email addresses, and review active semester records anytime through the <a href="profile.html" class="text-primary-link">Profile Management</a> dashboard.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-header" type="button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-3">
+              <span class="faq-question-text">How can I register for college events and hackathons?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div id="faq-answer-3" class="faq-accordion-body" role="region" aria-labelledby="faq-btn-3" hidden>
+              <p>
+                Open the <a href="events.html" class="text-primary-link">Campus Events</a> tab, browse through available technical workshops, seminars, or competitions, and click the "Register" or "Join Now" button on the respective event card.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-header" type="button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-btn-4">
+              <span class="faq-question-text">How is student data protected on the platform?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div id="faq-answer-4" class="faq-accordion-body" role="region" aria-labelledby="faq-btn-4" hidden>
+              <p>
+                StudentHub isolates administrative tools behind role-verified authentication and encrypts student authentication credentials to ensure your academic and personal information remains strictly protected.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-header" type="button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-btn-5">
+              <span class="faq-question-text">Who is permitted to access the personal dashboard?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div id="faq-answer-5" class="faq-accordion-body" role="region" aria-labelledby="faq-btn-5" hidden>
+              <p>
+                Access to the personalized <a href="dashboard.html" class="text-primary-link">Student Dashboard</a> requires authenticated credentials associated with a valid university student account.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-header" type="button" aria-expanded="false" aria-controls="faq-answer-6" id="faq-btn-6">
+              <span class="faq-question-text">How do I contact the campus administrator or support cell?</span>
+              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div id="faq-answer-6" class="faq-accordion-body" role="region" aria-labelledby="faq-btn-6" hidden>
+              <p>
+                You can reach the administrative team directly by submitting an inquiry via our <a href="contact.html" class="text-primary-link">Contact Page</a> or sharing suggestions through the <a href="feedback.html" class="text-primary-link">Feedback Form</a>.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Help Callout Banner -->
+        <div class="faq-help-callout">
+          <div class="callout-icon">
+            <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+          </div>
+          <div class="callout-content">
+            <h3>Still have questions?</h3>
+            <p>Our student helpdesk is available Monday through Saturday to assist with account or academic queries.</p>
+          </div>
+          <a href="contact.html" class="btn btn-outline">Contact Support</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--================ SITE FOOTER =================-->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="logo-text">Student<span>Hub</span></span>
+          </a>
+          <p class="footer-bio">
+            Your unified digital campus portal engineered to simplify academic coordination, announcements, and student participation.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Portal</a></li>
+            <li><a href="events.html">Campus Events</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="faq.html">Help & FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Portals & Access -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Student Portal</h3>
+          <ul class="footer-links">
+            <li><a href="login.html">Student Login</a></li>
+            <li><a href="registar.html">New Registration</a></li>
+            <li><a href="profile.html">Academic Profile</a></li>
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="admin.html">Admin Console</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Campus Contact</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>CHARUSAT Campus, Changa, Anand, Gujarat — 388421</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              <span>Mon - Sat: 9:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="faq.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="faq.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="../js/script.js"></script>
 </body>
+
 </html>
